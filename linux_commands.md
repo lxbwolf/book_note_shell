@@ -7,3 +7,4 @@
 ###[5 tail](https://lxbwolf.gitbooks.io/note_shell/content/tail.html)  
 ###[6 ps](https://lxbwolf.gitbooks.io/note_shell/content/ps.html)  
 ###[7 kill](https://lxbwolf.gitbooks.io/note_shell/content/kill.html)  
+###[8 tar](https://lxbwolf.gitbooks.io/note_shell/content/tar.html)  
