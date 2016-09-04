@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Advice](advice.md)
-* [Vim使用](vim_using.md)
+* [vim使用](vim_using.md)
 * [awk](awk.md)
 * [Linux命令](linux_commands.md)
    * [echo](echo.md)
