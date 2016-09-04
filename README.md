@@ -1,1 +1,1 @@
-# book_note_shell
+This is my shell studying notes
