@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [advice](advice.md)
+* [Advice](advice.md)
 * [Vim使用](vim_using.md)
 * [awk](awk.md)
 * [Linux命令](linux_commands.md)
