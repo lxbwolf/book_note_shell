@@ -1,1 +1,1 @@
-This is my shell studying notes
+Some notes about shell
