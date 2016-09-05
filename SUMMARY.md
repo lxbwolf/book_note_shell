@@ -4,7 +4,7 @@
 * [Advice](advice.md)
 * [vim使用](vim_using.md)
 * [awk](awk.md)
-* [Linux命令](linux_commands.md)
+* Linux命令
    * [echo](echo.md)
    * [diff](diff.md)
    * [find](find.md)
