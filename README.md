@@ -1,4 +1,4 @@
-# Summary
+# Index
 
 * [Introduction](README.md)
 * [Advice](advice.md)
