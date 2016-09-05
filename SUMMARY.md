@@ -13,6 +13,7 @@
    * [ps](ps.md)
    * [kill](kill.md)
    * [tar](tar.md)
+   * curl
 * [Shell语法基础](shell_grammar.md)
    * [变量](variants.md)
    * [控制结构](control_structure.md)
