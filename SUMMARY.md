@@ -14,7 +14,7 @@
    * [kill](kill.md)
    * [tar](tar.md)
    * [curl](curl.md)
-   * rsync
+   * [rsync](rsync.md)
 * Shell语法基础
    * [变量](variants.md)
    * [控制结构](control_structure.md)
