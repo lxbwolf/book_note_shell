@@ -231,3 +231,25 @@ content/uploads/2010/09/compare_varnish.jpg
 [zhangy@BlackGhost ~]$ curl -T test.sql ftp://用户名:密码@ip:port/demo/curtain/bbstudy_files/ ```
 
 
+# wget  
+
+wget不需要任何选项。下载的文件在当前目录。  
+`wget website.com/file`
+
+# ping  
+
+ping发送ECHO_REQUEST包到你指定的地址。这样你可以很方便确认你的电脑和Internet或是一个指定的IP地址是不是通的。使用 -c 开关，可以指定发送ECHO_REQUEST包的个数。  
+`ping -c 4 google.com`
+
+# tracepath & traceroute  
+
+tracepath命令和traceroute命令功能类似，但不需要root权限。并且Ubuntu预装了这个命令，traceroute命令没有预装的。tracepath追踪出到指定的目的地址的网络路径，并给出在路径上的每一跳（hop）。如果你的网络有问题或是慢了，tracepath可以查出网络在哪里断了或是慢了。  
+`tracepath example.com`  
+
+# host  
+
+host命令用来做DNS查询。如果命令参数是域名，命令会输出关联的IP；如果命令参数是IP，命令则输出关联的域名。  
+```bash
+host howtogeek.com
+host 208.43.115.82
+```
