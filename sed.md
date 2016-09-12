@@ -2,9 +2,121 @@
 
 [sed参考手册](http://www.gnu.org/software/sed/manual/sed.html)  
 sed全名为stream editor, 流编辑器, 用程序的方式来编辑文本.   
-#### 参数  
 
+#### 命令  
 
+##### a命令和i命令  
+
+a命令就是append， i命令就是insert，它们是用来添加行的。如  
+
+```bash
+# 其中的1i表明，其要在第1行前插入一行（insert）
+$ sed "1 i This is my monkey, my monkey's name is wukong" my.txt
+This is my monkey, my monkey's name is wukong
+This is my cat, my cat's name is betty
+This is my dog, my dog's name is frank
+This is my fish, my fish's name is george
+This is my goat, my goat's name is adam
+ 
+# 其中的$a表明，其要在最后一行后追加一行（append）
+$ sed "$ a This is my monkey, my monkey's name is wukong" my.txt
+This is my cat, my cat's name is betty
+This is my monkey, my monkey's name is wukong
+This is my dog, my dog's name is frank
+This is my fish, my fish's name is george
+This is my goat, my goat's name is adam
+```
+
+我们可以运用匹配来添加文本：  
+```bash
+# 注意其中的/fish/a，这意思是匹配到/fish/后就追加一行
+$ sed "/fish/a This is my monkey, my monkey's name is wukong" my.txt
+This is my cat, my cat's name is betty
+This is my dog, my dog's name is frank
+This is my fish, my fish's name is george
+This is my monkey, my monkey's name is wukong
+This is my goat, my goat's name is adam
+```
+
+下面这个例子是对每一行都挺插入：  
+```bash
+$ sed "/my/a ----" my.txt
+This is my cat, my cat's name is betty
+----
+This is my dog, my dog's name is frank
+----
+This is my fish, my fish's name is george
+----
+This is my goat, my goat's name is adam
+----
+```
+
+##### c命令  
+
+替换匹配行
+
+```bash
+$ sed "2 c This is my monkey, my monkey's name is wukong" my.txt
+This is my cat, my cat's name is betty
+This is my monkey, my monkey's name is wukong
+This is my fish, my fish's name is george
+This is my goat, my goat's name is adam
+ 
+$ sed "/fish/c This is my monkey, my monkey's name is wukong" my.txt
+This is my cat, my cat's name is betty
+This is my dog, my dog's name is frank
+This is my monkey, my monkey's name is wukong
+This is my goat, my goat's name is adam
+```
+
+##### d命令  
+
+删除匹配行  
+
+```bash
+$ sed '/fish/d' my.txt
+This is my cat, my cat's name is betty
+This is my dog, my dog's name is frank
+This is my goat, my goat's name is adam
+ 
+$ sed '2d' my.txt
+This is my cat, my cat's name is betty
+This is my fish, my fish's name is george
+This is my goat, my goat's name is adam
+ 
+$ sed '2,$d' my.txt
+This is my cat, my cat's name is betty
+```
+
+##### p命令  
+
+打印命令. 可以把这个命令当成grep式的命令  
+
+```bash
+# 匹配fish并输出，可以看到fish的那一行被打了两遍，
+# 这是因为sed处理时会把处理的信息输出
+$ sed '/fish/p' my.txt
+This is my cat, my cat's name is betty
+This is my dog, my dog's name is frank
+This is my fish, my fish's name is george
+This is my fish, my fish's name is george
+This is my goat, my goat's name is adam
+ 
+# 使用n参数就好了
+$ sed -n '/fish/p' my.txt
+This is my fish, my fish's name is george
+ 
+# 从匹配"dog"的那一行打印到匹配"fish"的那一行
+$ sed -n '/dog/,/fish/p' my.txt
+This is my dog, my dog's name is frank
+This is my fish, my fish's name is george
+ 
+#从第一行打印到匹配fish成功的那一行
+$ sed -n '1,/fish/p' my.txt
+This is my cat, my cat's name is betty
+This is my dog, my dog's name is frank
+This is my fish, my fish's name is george
+```
 
 #### 用s命令替换  
 
