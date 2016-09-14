@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * [Advice](advice.md)
-* [awk](awk.md)
 * Linux命令
    * [echo](echo.md)
    * [diff](diff.md)
@@ -14,6 +13,8 @@
    * [tar](tar.md)
    * [curl](curl.md)
    * [rsync](rsync.md)
+* 工具
+   * [awk](awk.md)
    * [sed](sed.md)
    * [htop](htop.md)
 * Shell语法基础
@@ -26,5 +27,4 @@
    * [符号](symbols.md)
    * [组用户](users.md)
 * [vim使用](vim_using.md)
-* 工具
 
