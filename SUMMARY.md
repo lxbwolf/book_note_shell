@@ -27,5 +27,5 @@
    * [I/O相关](io_relative.md)
    * [符号](symbols.md)
    * [组用户](users.md)
-   * 脚本调试
+   * [脚本调试](script_debug.md)
 
