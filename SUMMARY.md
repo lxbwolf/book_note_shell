@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * [Advice](advice.md)
-* [vim使用](vim_using.md)
 * [awk](awk.md)
 * Linux命令
    * [echo](echo.md)
@@ -26,5 +25,6 @@
    * [I/O相关](io_relative.md)
    * [符号](symbols.md)
    * [组用户](users.md)
+* [vim使用](vim_using.md)
 * 工具
 
