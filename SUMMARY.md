@@ -17,6 +17,7 @@
    * [awk](awk.md)
    * [sed](sed.md)
    * [htop](htop.md)
+   * [vim](vim_using.md)
 * Shell语法基础
    * [变量](variants.md)
    * [控制结构](control_structure.md)
@@ -26,5 +27,4 @@
    * [I/O相关](io_relative.md)
    * [符号](symbols.md)
    * [组用户](users.md)
-* [vim使用](vim_using.md)
 
