@@ -19,6 +19,7 @@
    * [htop](linux_tools/htop.md)
    * [vim](linux_tools/vim_using.md)
 * Shell语法
+   * [基础](shell_common.md)
    * [变量](shell_grammar/variants.md)
    * [控制结构](shell_grammar/control_structure.md)
    * [条件测试](shell_grammar/candition_test.md)
@@ -28,7 +29,6 @@
    * [符号](shell_grammar/symbols.md)
    * [组用户](shell_grammar/users.md)
    * [脚本调试](shell_grammar/script_debug.md)
-   * [基础](shell_common.md)
 * Other
    * [Bash中的空格](other/space.md)
 
