@@ -19,7 +19,7 @@
    * [htop](linux_tools/htop.md)
    * [vim](linux_tools/vim_using.md)
 * Shell语法
-   * [基础](shell_common.md)
+   * [基础](shell_grammar/common.md)
    * [变量](shell_grammar/variants.md)
    * [控制结构](shell_grammar/control_structure.md)
    * [条件测试](shell_grammar/candition_test.md)
