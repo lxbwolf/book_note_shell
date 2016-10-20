@@ -28,5 +28,7 @@
    * [符号](shell_grammar/symbols.md)
    * [组用户](shell_grammar/users.md)
    * [脚本调试](shell_grammar/script_debug.md)
+   * 基础
 * Other
    * [Bash中的空格](other/space.md)
+
