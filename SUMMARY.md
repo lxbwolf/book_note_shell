@@ -31,4 +31,5 @@
    * [脚本调试](shell_grammar/script_debug.md)
 * Other
    * [Bash中的空格](other/space.md)
+   * [File](other/file.md)
 
