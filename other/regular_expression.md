@@ -215,3 +215,48 @@ he was the honest man in LampBrother.
 Later, Mr. Li Ming soid his hot body.
 ```
 
+##### 7 `\{n\}` 表示其前面的字符恰好出现n次
+
+`grep “a\{3\}” test_rule.txt`
+
+匹配字母a连续出现3次的行
+
+```bash
+# grep "a\{3\}" test_rule.txt
+he never saaaid those words
+because, actuaaaally,
+```
+
+`grep “[0-9]\{3\}” test_rule.txt`
+
+匹配包含连续3个数字的行
+
+```bash
+# grep "[0-9]\{3\}" test_rule.txt
+123despise him.
+5555 nice
+```
+
+##### 8 `\{n,\}`表示其前面的字符出现不小于n次
+
+`grep “^[0-9]\{3,\}” test_rule.txt`
+
+匹配至少连续3个数字开头的行
+
+```bash
+# grep "^[0-9]\{3,\}" test_rule.txt
+123despise him.
+5555 nice
+```
+
+##### 9 `\{n,m\}` 表示其前面的字符出现不小于n次，最多m次
+
+`grep “sa\{1,3\}i” test_rule.txt`
+
+匹配s和i之间最少1个a，最多3个a
+
+```bash
+# grep "as\{1,3\}i" test_rule.txt
+Mr. Li Ming said:
+he never saaaid those words
+```
