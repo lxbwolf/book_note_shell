@@ -11,6 +11,7 @@
 Mr. Li Ming said:
 he was the honest man in LampBrother.
 123despise him.
+
 But since Mr. Shen Chao came,
 he never saaaid those words
 5555 nice
@@ -32,6 +33,7 @@ Later, Mr. Li Ming soid his hot body.
 Mr. Li Ming said:
 he was the honest man in LampBrother.
 123despise him.
+
 But since Mr. Shen Chao came,
 he never saaaid those words
 5555 nice
@@ -40,5 +42,30 @@ because, actuaaaally,
 Mr. Shen Chao is the most honest man
 
 Later, Mr. Li Ming soid his hot body.
+```
+
+`grep “aa*” test_rule.txt`
+
+匹配至少包含有一个a的行
+
+```bash
+# grep “aa*” test_rule.txt
+Mr. Li Ming said:
+he was the honest man in LampBrother.
+But since Mr. Shen Chao came,
+he never saaaid those words
+because, actuaaaally,
+Mr. Shen Chao is the most honest man
+Later, Mr. Li Ming soid his hot body.
+```
+
+`grep “aaa*” test_rule.txt`
+
+匹配至少包含有两个a的行
+
+```bash
+# grep “aaa*” test_rule.txt
+he never saaaid those words
+because, actuaaaally,
 ```
 
