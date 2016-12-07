@@ -69,3 +69,57 @@ he never saaaid those words
 because, actuaaaally,
 ```
 
+##### `.` 匹配除换行符外的任意一个字符
+
+`grep “s..d” test_rule.txt`
+
+匹配s和d直接一定要有两个字符的行
+
+```bash
+# grep "s..d" test_rule.txt
+Mr. Li Ming said:
+Later, Mr. Li Ming soid his hot body.
+```
+
+`grep “s.*d” test_rule.txt`
+
+匹配s和d直接任意字符
+
+```bash
+# grep "s.*d" test_rule.txt
+Mr. Li Ming said:
+he never saaaid those words
+Later, Mr. Li Ming soid his hot body.
+```
+
+`grep “.*” test_rule.txt`
+匹配所有内容
+
+```bash
+# grep ".*" test_rule.txt
+Mr. Li Ming said:
+he was the honest man in LampBrother.
+123despise him.
+
+But since Mr. Shen Chao came,
+he never saaaid those words
+5555 nice
+
+because, actuaaaally,
+Mr. Shen Chao is the most honest man
+
+Later, Mr. Li Ming soid his hot body.
+```
+
+##### 3 `^` 匹配行首 `$` 匹配行尾
+
+`grep “^M” test_rule.txt`
+
+匹配以大写M开头的行
+
+```bash
+# grep "^M" test_rule.txt
+Mr. Li Ming said:
+Mr. Shen Chao is the most honest man
+```
+
