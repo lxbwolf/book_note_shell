@@ -123,3 +123,95 @@ Mr. Li Ming said:
 Mr. Shen Chao is the most honest man
 ```
 
+`grep “n$” test_rule.txt`
+
+匹配以小写n结尾的行
+
+```bash
+# grep "n$" test_rule.txt
+Mr. Shen Chao is the most honest man
+```
+
+`grep -n “^$” test_rule.txt`
+
+匹配空白行
+
+```bash
+# grep -n "^$" test_rule.txt
+4:
+8:
+11:
+```
+
+##### 4 `[]` 匹配括号中指定的任意一个字符, 只匹配一个字符
+
+`grep “s[ao]id” test_rule.txt`
+
+匹配s和i字母之间，要么是a，要么是o的行
+
+```bash
+# grep "s[ao]id" test_rule.txt
+Mr. Li Ming said:
+Later, Mr. Li Ming soid his hot body.
+```
+
+`grep “[0-9]” test_rule.txt`
+
+匹配任意一个数字
+
+```bash
+# grep "[0-9]" test_rule.txt
+123despise him.
+5555 nice
+```
+
+`grep “^[a-z]” test_rule.txt`
+
+匹配用小写字母开头的行
+
+```bash
+# grep "^[a-z]" test_rule.txt
+he was the honest man in LampBrother.
+he never saaaid those words
+because, actuaaaally,
+```
+
+##### 5 `[^]` 匹配除括号中以外的任意一个字符
+
+`grep “^[^a-z]” test_rule.txt`
+
+匹配不用小写字母开头的行
+
+```bash
+# grep "^[^a-z]" test_rule.txt
+Mr. Li Ming said:
+123despise him.
+But since Mr. Shen Chao came,
+5555 nice
+Mr. Shen Chao is the most honest man
+Later, Mr. Li Ming soid his hot body.
+```
+
+`grep “^[^a-zA-Z]” test_rule.txt`
+
+匹配不用字符开头的行
+
+```bash
+# grep "^[^a-zA-Z]" test_rule.txt
+123despise him.
+5555 nice
+```
+
+##### 6 `\` 转义符
+
+`grep “\.$” test_rule.txt`
+
+匹配以.结尾的行
+
+```bash
+# grep "\.$" test_rule.txt
+he was the honest man in LampBrother.
+123despise him.
+Later, Mr. Li Ming soid his hot body.
+```
+
