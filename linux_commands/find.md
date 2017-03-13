@@ -124,6 +124,16 @@ find . -type l -print
 - 指定搜索深度
 `find . -maxdepth 1 -type f`
 
+## 8 找到后的后续动作
+
+- 删除
+`find . -name "*.swp" -delete`
+
+- 执行动作(强大的exec)
+`find -type f -uer root -exec chown liuxb {} \;` // {}是一个特殊的字符串，对于每一个匹配的文件，{}会被替换成相应的文件名；
+
+
+
 
 
 
