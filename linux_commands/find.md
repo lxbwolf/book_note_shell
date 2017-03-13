@@ -2,16 +2,24 @@
 
 
 ## 1 name选项  
-可以使用某种文件名模式来匹配文件，记住要用引号将文件名模式引起来  
-*find . -name "*.log" -print*  
+- 可以使用某种文件名模式来匹配文件，记住要用引号将文件名模式引起来  
+`*find . -name "*.log" -print*`  
 
-想要的当前目录及子目录中查找文件名以一个大写字母开头的文件，可以用  
-find . -name "[A-Z]*" -print  
+- 想要的当前目录及子目录中查找文件名以一个大写字母开头的文件，可以用  
+`find . -name "[A-Z]*" -print`  
 
-如果想在当前目录查找文件名以一个个小写字母开头，最后是4到9加上.log结束的文件:  
-find . -name "[a-z]*[4-9].log" -print  
+- 如果想在当前目录查找文件名以一个个小写字母开头，最后是4到9加上.log结束的文件:  
+`find . -name "[a-z]*[4-9].log" -print`  
 
+- 查找所有txt和pdf文件
+`find . \( -name "*.txt" -o -name "*.pdf \) -print"`
 
+- 正则表达式查找txt和pdf文件
+`find . -regex ".*\(\.txt|\.pdf\)$"`
+-- -iregex 忽略大小写的正则
+
+- 否定参数. 查找所有非txt文件
+`find . ! -name "*.txt" -print`
 
 ## 2 perm选项  
 
@@ -104,14 +112,17 @@ drwxrwxr-x 2 root root   4096 11-13 05:50 test4
 
 ## 7 type选项  
 
-查找所有目录  
+- 查找所有目录  
 find . -type d -print  
 
-查找除目录以外类型的文件  
+- 查找除目录以外类型的文件  
 find . ! -type d -print  
 
-查找所有符号链接文件  
+- 查找所有符号链接文件  
 find . -type l -print  
+
+- 指定搜索深度
+`find . -maxdepth 1 -type f`
 
 
 
