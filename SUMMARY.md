@@ -14,6 +14,7 @@
   * [curl](linux_commands/curl.md)
   * [rsync](linux_commands/rsync.md)
   * [grep](linux_commands/grep.md)
+  * [tr](linux_commands/tr.md)
 * 工具
   * [awk](linux_tools/awk.md)
   * [sed](linux_tools/sed.md)
