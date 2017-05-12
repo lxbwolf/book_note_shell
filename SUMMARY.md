@@ -32,6 +32,7 @@
   * [组用户](shell_grammar/users.md)
   * [脚本调试](shell_grammar/script_debug.md)
   * [运算符](shell_grammar/operator.md)
+  * [数组](shell_grammar/array.md)
 * Other
   * [Bash中的空格](other/space.md)
   * [正则表达式](other/regular_expression.md)
