@@ -15,12 +15,12 @@
   * [rsync](linux_commands/rsync.md)
   * [grep](linux_commands/grep.md)
   * [tr](linux_commands/tr.md)
-* 工具
+* [工具](gong-ju.md)
   * [awk](linux_tools/awk.md)
   * [sed](linux_tools/sed.md)
   * [htop](linux_tools/htop.md)
   * [vim](linux_tools/vim_using.md)
-* Shell语法
+* [Shell语法](shellyu-fa.md)
   * [基础](shell_grammar/common.md)
   * [变量](shell_grammar/variants.md)
   * [控制结构](shell_grammar/control_structure.md)
@@ -31,6 +31,7 @@
   * [符号](shell_grammar/symbols.md)
   * [组用户](shell_grammar/users.md)
   * [脚本调试](shell_grammar/script_debug.md)
+  * [运算符](shell_grammar/operator.md)
 * Other
   * [Bash中的空格](other/space.md)
   * [正则表达式](other/regular_expression.md)
