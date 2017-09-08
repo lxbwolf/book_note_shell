@@ -15,6 +15,7 @@
   * [rsync](linux_commands/rsync.md)
   * [grep](linux_commands/grep.md)
   * [tr](linux_commands/tr.md)
+  * [ls](linux_commands/ls.md)
 * [工具](gong-ju.md)
   * [awk](linux_tools/awk.md)
   * [sed](linux_tools/sed.md)
